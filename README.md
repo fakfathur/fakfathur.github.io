@@ -199,8 +199,8 @@
             <h2>Our Favorite Songs</h2>
             <div class="card">
                 <audio controls>
-                    <source src="C:\Users\user\Downloads\Farra's Smile.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element. <a href="C:\Users\user\Downloads\Farra's Smile.mp3" download>Download Song 1</a>
+                    <source src="[C:\Users\user\Downloads\Farra's Smile.mp3](https://github.com/fakfathur/fakfathur.github.io/blob/main/Farra's%20Smile.mp3)" type="audio/mpeg">
+                    Your browser does not support the audio element. <a href="[C:\Users\user\Downloads\Farra's Smile.mp3](https://github.com/fakfathur/fakfathur.github.io/blob/main/Farra's%20Smile.mp3)" download>Download Song 1</a>
                 </audio>
                 <p>Enjoy this tune that always brings back memories.</p>
             </div>
