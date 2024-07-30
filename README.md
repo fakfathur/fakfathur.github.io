@@ -15,8 +15,8 @@
         }
         .container {
             max-width: 1200px;
-            margin: 40px auto;
-            padding: 30px;
+            margin: 20px auto;
+            padding: 20px;
             background: #ffffff;
             border-radius: 20px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
@@ -37,9 +37,9 @@
         }
         h1 {
             color: #2c3e50;
-            font-size: 3.5em;
+            font-size: 2.5em;
             margin: 0;
-            padding: 20px;
+            padding: 10px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
             animation: fadeIn 2s ease-out;
         }
@@ -48,17 +48,17 @@
             to { opacity: 1; }
         }
         .section {
-            margin: 40px 0;
+            margin: 20px 0;
             position: relative;
         }
         .section h2 {
             color: #007bff;
-            font-size: 2.5em;
-            margin-bottom: 20px;
+            font-size: 2em;
+            margin-bottom: 10px;
             font-weight: 500;
             border-bottom: 2px solid #007bff;
             display: inline-block;
-            padding-bottom: 10px;
+            padding-bottom: 5px;
             transition: color 0.3s, transform 0.3s;
         }
         .section h2:hover {
@@ -76,19 +76,19 @@
         }
         video, audio {
             display: block;
-            margin: 30px auto;
+            margin: 20px auto;
             max-width: 100%;
         }
         .button {
             display: inline-block;
-            padding: 12px 24px;
+            padding: 10px 20px;
             background-color: #007bff;
             color: #fff;
             text-decoration: none;
             border-radius: 8px;
-            font-size: 1.2em;
+            font-size: 1em;
             transition: background-color 0.3s, transform 0.3s;
-            margin-top: 20px;
+            margin-top: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .button:hover {
@@ -116,33 +116,27 @@
             opacity: 1;
         }
         .overlay-content {
-            max-width: 80%;
-            max-height: 80%;
+            width: 90%;
+            height: 90%;
             background: #343a40;
-            padding: 30px;
+            padding: 10px;
             border-radius: 15px;
             position: relative;
             overflow: hidden;
-            animation: slideIn 1s ease-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        @keyframes slideIn {
-            from { transform: translateY(-100%); }
-            to { transform: translateY(0); }
-        }
-        .overlay-content h3 {
-            margin-top: 0;
-            font-size: 2.5em;
-            color: #f8f9fa;
-        }
-        .overlay-content p {
-            font-size: 1.2em;
-            color: #e9ecef;
+        .overlay-content img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
         }
         .close {
             position: absolute;
-            top: 15px;
-            right: 15px;
-            font-size: 2em;
+            top: 10px;
+            right: 10px;
+            font-size: 1.5em;
             cursor: pointer;
             color: #f8f9fa;
             transition: color 0.3s;
@@ -154,8 +148,8 @@
             background: #ffffff;
             border-radius: 15px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            margin: 20px;
-            padding: 20px;
+            margin: 10px;
+            padding: 10px;
             text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
         }
@@ -167,16 +161,41 @@
             width: 100%;
             border-radius: 15px;
         }
+        .fallback {
+            font-size: 1em;
+            color: #888;
+            margin-top: 10px;
+        }
         @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
-            .section h2 {
+            h1 {
                 font-size: 2em;
             }
+            .section h2 {
+                font-size: 1.5em;
+            }
             .button {
-                font-size: 1em;
-                padding: 10px 20px;
+                font-size: 0.9em;
+                padding: 8px 16px;
+            }
+            .card {
+                margin: 10px 5px;
+                padding: 10px 5px;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            .section h2 {
+                font-size: 1.2em;
+            }
+            .button {
+                font-size: 0.8em;
+                padding: 6px 12px;
+            }
+            .card {
+                margin: 5px;
+                padding: 5px;
             }
         }
     </style>
@@ -189,7 +208,7 @@
         <div class="section">
             <h2>Our Special Photo</h2>
             <div class="card">
-                <img src="C:\Users\user\OneDrive\Pictures\thumb.jpg" alt="Anniversary Photo" id="photo">
+                <img src="your-photo.jpg" alt="Anniversary Photo" id="photo">
                 <p>Here's a cherished memory from our journey together.</p>
             </div>
         </div>
@@ -199,26 +218,27 @@
             <h2>Our Favorite Songs</h2>
             <div class="card">
                 <audio controls>
-                    <source src="[C:\Users\user\Downloads\Farra's Smile.mp3](https://github.com/fakfathur/fakfathur.github.io/blob/main/Farra's%20Smile.mp3)" type="audio/mpeg">
-                    Your browser does not support the audio element. <a href="[C:\Users\user\Downloads\Farra's Smile.mp3](https://github.com/fakfathur/fakfathur.github.io/blob/main/Farra's%20Smile.mp3)" download>Download Song 1</a>
+                    <source src="song1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element. <a href="song1.mp3" download>Download Song 1</a>
                 </audio>
                 <p>Enjoy this tune that always brings back memories.</p>
             </div>
             <div class="card">
                 <audio controls>
-                    <source src="C:\Users\user\Downloads\MISSED U (1).mp3" type="audio/mpeg">
-                    Your browser does not support the audio element. <a href="C:\Users\user\Downloads\MISSED U (1).mp3" download>Download Song 2</a>
+                    <source src="song2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element. <a href="song2.mp3" download>Download Song 2</a>
                 </audio>
                 <p>A melody that means so much to us.</p>
             </div>
         </div>
+
         <!-- Video Section -->
         <div class="section">
             <h2>Watch Our Video</h2>
             <div class="card">
                 <video controls>
                     <source src="video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                    Your browser does not support the video tag. <a href="video.mp4" download>Download Video</a>
                 </video>
                 <p>Relive the special moments with this video.</p>
             </div>
@@ -227,13 +247,11 @@
         <a href="#" class="button" id="show-overlay">Click for a Surprise</a>
     </div>
 
-     <!-- Overlay for Surprise -->
-     <div class="overlay" id="overlay">
+    <!-- Overlay for Surprise -->
+    <div class="overlay" id="overlay">
         <div class="overlay-content">
             <span class="close" id="close-overlay">&times;</span>
-            <h3>Surprise!</h3>
-            <p>Here's a little extra something to celebrate our special day. We hope you enjoy it!</p>
-            <img src="C:\Users\user\OneDrive\Pictures\Camera Roll\_DSC0709-Recovered.png" alt="Surprise Image" style="width: 100%; max-height: 70vh; object-fit: contain;">
+            <img src="surprise.jpg" alt="Surprise Image">
         </div>
     </div>
 
