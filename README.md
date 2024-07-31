@@ -225,8 +225,8 @@
             </div>
             <div class="card">
                 <audio controls>
-                    <source src="song2.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element. <a href="song2.mp3" download>Download Song 2</a>
+                    <source src="[song2.mp3](https://github.com/fakfathur/fakfathur.github.io/blob/main/Farra's%20Smile.mp3)" type="audio/mpeg">
+                    Your browser does not support the audio element. <a href="[song2.mp3](https://github.com/fakfathur/fakfathur.github.io/blob/main/Farra's%20Smile.mp3)" download>Download Song 2</a>
                 </audio>
                 <p>A melody that means so much to us.</p>
             </div>
